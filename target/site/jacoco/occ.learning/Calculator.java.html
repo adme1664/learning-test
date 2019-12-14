@@ -24,6 +24,24 @@ import java.util.Set;
 <span class="fc" id="L24">		return integers;</span>
 	}
 	
+	public double add(double a, double b) {
+<span class="nc" id="L28">		return a+b;</span>
+	}
+	public double multiply(double a, double b) {
+<span class="nc" id="L31">		return a*b;</span>
+	}
+	
+	public double divide(double a, double b ) throws IllegalArgumentException {
+		try {
+<span class="nc bnc" id="L36" title="All 2 branches missed.">			if(b&gt;0) {</span>
+<span class="nc" id="L37">				return a/b;</span>
+			}
+<span class="nc" id="L39">			return 0;</span>
+		}
+<span class="nc" id="L41">		catch(Exception e) {</span>
+<span class="nc" id="L42">			throw new IllegalArgumentException(&quot;can't divide by zer0&quot;);</span>
+		}
+	}
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

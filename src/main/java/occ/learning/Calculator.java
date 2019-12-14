@@ -31,7 +31,7 @@ public class Calculator {
 		return a*b;
 	}
 	
-	public double divide(double a, double b ) throws IllegalArgumentException {
+	public double divide(double a, double b )  {
 		try {
 			if(b>0) {
 				return a/b;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="occ.learning.test.CalculatorTest" time="0.464" tests="8" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="occ.learning.test.CalculatorTest" time="0.371" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.5\bin"/>
-    <property name="sun.java.command" value="C:\Users\IHSI\AppData\Local\Temp\surefire345400360464019910\surefirebooter17552986633393168294.jar C:\Users\IHSI\AppData\Local\Temp\surefire345400360464019910 2019-12-13T20-31-43_361-jvmRun1 surefire17981367802044170426tmp surefire_05540041344685165990tmp"/>
+    <property name="sun.java.command" value="C:\Users\IHSI\AppData\Local\Temp\surefire18224476269344120653\surefirebooter16783529139026018066.jar C:\Users\IHSI\AppData\Local\Temp\surefire18224476269344120653 2019-12-13T20-38-39_181-jvmRun1 surefire15477986664485287496tmp surefire_013033933998153175142tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="F:\workspace\Java\Netbeans\Projects\learning-test\target\test-classes;F:\workspace\Java\Netbeans\Projects\learning-test\target\classes;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.1\junit-jupiter-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\IHSI\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\IHSI\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.1\junit-jupiter-params-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\IHSI\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\IHSI\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\IHSI\AppData\Local\Temp\surefire345400360464019910\surefirebooter17552986633393168294.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\IHSI\AppData\Local\Temp\surefire18224476269344120653\surefirebooter16783529139026018066.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.5+10-LTS"/>
@@ -62,25 +62,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testAddDoubleNumber{double, double, double}[1]" classname="occ.learning.test.CalculatorTest" time="0.246"/>
-  <testcase name="testAddDoubleNumber{double, double, double}[2]" classname="occ.learning.test.CalculatorTest" time="0.008"/>
-  <testcase name="testMultiplyDoubleNumber{double, double, double}[1]" classname="occ.learning.test.CalculatorTest" time="0.005"/>
-  <testcase name="testMultiplyDoubleNumber{double, double, double}[2]" classname="occ.learning.test.CalculatorTest" time="0.028">
-    <failure message="&#10;Expecting:&#10; &lt;13.640000000000002&gt;&#10;to be equal to:&#10; &lt;13.64&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-
-Expecting:
- <13.640000000000002>
-to be equal to:
- <13.64>
-but was not.
-	at occ.learning.test.CalculatorTest.testMultiplyDoubleNumber(CalculatorTest.java:88)
-]]></failure>
-    <system-out><![CDATA[Appel avant la création du calculator
-Appel àprès la création du calculator
-]]></system-out>
-  </testcase>
-  <testcase name="testAddTwoPositiveNumber{int, int, int}[1]" classname="occ.learning.test.CalculatorTest" time="0.007"/>
+  <testcase name="testAddDoubleNumber{double, double, double}[1]" classname="occ.learning.test.CalculatorTest" time="0.198"/>
+  <testcase name="testAddDoubleNumber{double, double, double}[2]" classname="occ.learning.test.CalculatorTest" time="0.01"/>
+  <testcase name="testMultiplyDoubleNumber{double, double, double}[1]" classname="occ.learning.test.CalculatorTest" time="0.006"/>
+  <testcase name="testMultiplyDoubleNumber{double, double, double}[2]" classname="occ.learning.test.CalculatorTest" time="0.006"/>
+  <testcase name="testAddTwoPositiveNumber{int, int, int}[1]" classname="occ.learning.test.CalculatorTest" time="0.005"/>
   <testcase name="testAddTwoPositiveNumber{int, int, int}[2]" classname="occ.learning.test.CalculatorTest" time="0.005"/>
-  <testcase name="testMultiplyTwoPositiveNumbers" classname="occ.learning.test.CalculatorTest" time="0.005"/>
-  <testcase name="testDigitInNumbers" classname="occ.learning.test.CalculatorTest" time="0.019"/>
+  <testcase name="testMultiplyTwoPositiveNumbers" classname="occ.learning.test.CalculatorTest" time="0.008"/>
+  <testcase name="testDigitInNumbers" classname="occ.learning.test.CalculatorTest" time="0.015"/>
 </testsuite>

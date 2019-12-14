@@ -67,5 +67,15 @@ public class CalculatorTest {
 		//THen
 		assertThat(integers).containsExactlyInAnyOrder(8,9,6,7);	
 	}
+	
+	@ParameterizedTest(name="{0} + {1} est égal à {2}")
+	@CsvSource({"2.4,2.5,4.7","3.1,4.4,7.5"})
+	public void testAddDoubleNumber(double a, double b, double expectedResult) {
+		//
+		//When
+		double result=calculatorToRunTest.add(a, b);
+		//Then
+		assertThat(result).isEqualTo(expectedResult);
+	}
 
 }

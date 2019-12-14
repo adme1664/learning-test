@@ -14,7 +14,7 @@ public class Calculator {
 	}
 
 	public Set<Integer> digitNumber(int number) {
-		Set<Integer> integers=new HashSet<Integer>();
+		Set<Integer> integers=new HashSet<>();
 		String numString=String.valueOf(number);
 		for(int i=0;i<numString.length();i++) {
 			if(numString.charAt(i)!='-') {

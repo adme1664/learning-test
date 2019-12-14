@@ -24,5 +24,23 @@ public class Calculator {
 		return integers;
 	}
 	
+	public double add(double a, double b) {
+		return a+b;
+	}
+	public double multiply(double a, double b) {
+		return a*b;
+	}
+	
+	public double divide(double a, double b ) throws IllegalArgumentException {
+		try {
+			if(b>0) {
+				return a/b;
+			}
+			return 0;
+		}
+		catch(Exception e) {
+			throw new IllegalArgumentException("can't divide by zer0");
+		}
+	}
 
 }

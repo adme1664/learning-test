@@ -14,7 +14,7 @@ import java.util.Set;
 	}
 
 	public Set&lt;Integer&gt; digitNumber(int number) {
-<span class="fc" id="L17">		Set&lt;Integer&gt; integers=new HashSet&lt;Integer&gt;();</span>
+<span class="fc" id="L17">		Set&lt;Integer&gt; integers=new HashSet&lt;&gt;();</span>
 <span class="fc" id="L18">		String numString=String.valueOf(number);</span>
 <span class="fc bfc" id="L19" title="All 2 branches covered.">		for(int i=0;i&lt;numString.length();i++) {</span>
 <span class="pc bpc" id="L20" title="1 of 2 branches missed.">			if(numString.charAt(i)!='-') {</span>

@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: occ.learning.test.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.387 s - in occ.learning.test.CalculatorTest
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.464 s <<< FAILURE! - in occ.learning.test.CalculatorTest
+testMultiplyDoubleNumber{double, double, double}[2]  Time elapsed: 0.028 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <13.640000000000002>
+to be equal to:
+ <13.64>
+but was not.
+	at occ.learning.test.CalculatorTest.testMultiplyDoubleNumber(CalculatorTest.java:88)
+

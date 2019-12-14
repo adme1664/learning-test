@@ -69,7 +69,7 @@ public class CalculatorTest {
 	}
 	
 	@ParameterizedTest(name="{0} + {1} est égal à {2}")
-	@CsvSource({"2.4,2.5,4.7","3.1,4.4,7.5"})
+	@CsvSource({"2.4,2.5,4.9","3.1,4.4,7.5"})
 	public void testAddDoubleNumber(double a, double b, double expectedResult) {
 		//
 		//When

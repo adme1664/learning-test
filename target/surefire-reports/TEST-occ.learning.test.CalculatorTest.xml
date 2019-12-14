@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="occ.learning.test.CalculatorTest" time="0.347" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="occ.learning.test.CalculatorTest" time="0.368" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.5\bin"/>
-    <property name="sun.java.command" value="C:\Users\IHSI\AppData\Local\Temp\surefire3504736377151598008\surefirebooter2653865536892030454.jar C:\Users\IHSI\AppData\Local\Temp\surefire3504736377151598008 2019-12-13T20-14-29_311-jvmRun1 surefire8510199873965247257tmp surefire_010035200558518399077tmp"/>
+    <property name="sun.java.command" value="C:\Users\IHSI\AppData\Local\Temp\surefire7878079048185308584\surefirebooter5488604389960949806.jar C:\Users\IHSI\AppData\Local\Temp\surefire7878079048185308584 2019-12-13T20-23-53_149-jvmRun1 surefire3793396871135577761tmp surefire_04934974411904907665tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="F:\workspace\Java\Netbeans\Projects\learning-test\target\test-classes;F:\workspace\Java\Netbeans\Projects\learning-test\target\classes;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter\5.5.1\junit-jupiter-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\IHSI\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\IHSI\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.5.1\junit-jupiter-params-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\IHSI\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\IHSI\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\IHSI\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\IHSI\AppData\Local\Temp\surefire3504736377151598008\surefirebooter2653865536892030454.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\IHSI\AppData\Local\Temp\surefire7878079048185308584\surefirebooter5488604389960949806.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.5+10-LTS"/>
@@ -62,8 +62,23 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testAddTwoPositiveNumber{int, int, int}[1]" classname="occ.learning.test.CalculatorTest" time="0.206"/>
-  <testcase name="testAddTwoPositiveNumber{int, int, int}[2]" classname="occ.learning.test.CalculatorTest" time="0.007"/>
-  <testcase name="testMultiplyTwoPositiveNumbers" classname="occ.learning.test.CalculatorTest" time="0.005"/>
+  <testcase name="testAddDoubleNumber{double, double, double}[1]" classname="occ.learning.test.CalculatorTest" time="0.221">
+    <failure message="&#10;Expecting:&#10; &lt;4.9&gt;&#10;to be equal to:&#10; &lt;4.7&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <4.9>
+to be equal to:
+ <4.7>
+but was not.
+	at occ.learning.test.CalculatorTest.testAddDoubleNumber(CalculatorTest.java:78)
+]]></failure>
+    <system-out><![CDATA[Appel avant la création du calculator
+Appel àprès la création du calculator
+]]></system-out>
+  </testcase>
+  <testcase name="testAddDoubleNumber{double, double, double}[2]" classname="occ.learning.test.CalculatorTest" time="0.006"/>
+  <testcase name="testAddTwoPositiveNumber{int, int, int}[1]" classname="occ.learning.test.CalculatorTest" time="0.006"/>
+  <testcase name="testAddTwoPositiveNumber{int, int, int}[2]" classname="occ.learning.test.CalculatorTest" time="0.006"/>
+  <testcase name="testMultiplyTwoPositiveNumbers" classname="occ.learning.test.CalculatorTest" time="0.004"/>
   <testcase name="testDigitInNumbers" classname="occ.learning.test.CalculatorTest" time="0.014"/>
 </testsuite>

@@ -8,6 +8,8 @@ import java.util.Set;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,6 +17,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import occ.learning.Calculator;
 
+@Tag("Calculator Program")
+@DisplayName("Effectuer des tests sur les differentes operations")
 @ExtendWith(LoggingExtension.class)
 public class CalculatorTest {
 
@@ -26,6 +30,7 @@ public class CalculatorTest {
 		this.logger=logger;
 	}
 	@BeforeEach
+	@DisplayName("Methode avant le deroulement du test")
 	public void initializeCalculator() {
 		logger.info("Appel avant la création du calculator");
 		calculatorToRunTest = new Calculator();
@@ -33,6 +38,7 @@ public class CalculatorTest {
 	}
 
 	@AfterEach
+	@DisplayName("Methode après le deroulement du test")
 	public void resetCalculator() {
 		logger.info("Appel àprès la création du calculator");
 		calculatorToRunTest = null;
@@ -40,6 +46,7 @@ public class CalculatorTest {
 
 	@ParameterizedTest(name = "{0} + {1} est égal {2}")
 	@CsvSource({ "1,2,3", "3,5,8" })
+	@DisplayName("Additionner 2 nombres entiers")
 	public void testAddTwoPositiveNumber(int a, int b, int expectedResult) {
 		// Arrange
 
@@ -51,6 +58,7 @@ public class CalculatorTest {
 	}
 
 	@Test
+	@DisplayName("Multiplier 2 nombres entiers")
 	public void testMultiplyTwoPositiveNumbers() {
 		// Arrange
 		int a = 4;
@@ -62,6 +70,7 @@ public class CalculatorTest {
 	}
 
 	@Test
+	@DisplayName("Afficher les chiffres d'un nombre")
 	public void testDigitInNumbers() {
 		// Given
 		int number = 9867;
@@ -73,6 +82,7 @@ public class CalculatorTest {
 
 	@ParameterizedTest(name = "{0} + {1} est égal à {2}")
 	@CsvSource({ "2.4,2.5,4.9", "3.1,4.4,7.5" })
+	@DisplayName("Additioner 2 nombres doubles")
 	public void testAddDoubleNumber(double a, double b, double expectedResult) {
 		//
 		// When
@@ -92,6 +102,7 @@ public class CalculatorTest {
 	}
 
 	@Test
+	@DisplayName("Multiplier 2 nombres doubles")
 	public void testDivideDoubleNumber() {
 		// Given
 		double a = 4;

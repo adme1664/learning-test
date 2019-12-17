@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: occ.learning.test.CalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in occ.learning.test.CalculatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.882 s - in occ.learning.test.CalculatorTest

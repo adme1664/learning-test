@@ -1,7 +1,0 @@
-organization=adme1664
-projectKey=adme1664_learning-test
-serverUrl=https://sonarcloud.io
-serverVersion=8.0.0.3457
-dashboardUrl=https://sonarcloud.io/dashboard?id=adme1664_learning-test
-ceTaskId=AW8CDk_q2C4Mt8UGVn36
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AW8CDk_q2C4Mt8UGVn36

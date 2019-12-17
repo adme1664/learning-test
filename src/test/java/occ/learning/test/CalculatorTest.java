@@ -5,29 +5,36 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.time.Instant;
 import java.util.Set;
 
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import occ.learning.Calculator;
 
+@ExtendWith(LoggingExtension.class)
 public class CalculatorTest {
 
 	private Calculator calculatorToRunTest;
 	private Instant startedAt;
+	private Logger logger;
 
+	public void setLogger(Logger logger) {
+		this.logger=logger;
+	}
 	@BeforeEach
 	public void initializeCalculator() {
-		System.out.println("Appel avant la création du calculator");
+		logger.info("Appel avant la création du calculator");
 		calculatorToRunTest = new Calculator();
 		startedAt = Instant.now();
 	}
 
 	@AfterEach
 	public void resetCalculator() {
-		System.out.println("Appel àprès la création du calculator");
+		logger.info("Appel àprès la création du calculator");
 		calculatorToRunTest = null;
 	}
 
